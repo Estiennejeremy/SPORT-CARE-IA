@@ -14,7 +14,7 @@ def timedomain(rr):
     results = {}
 
     hr = 60000/rr
-    return np.sqrt(np.mean(np.square(np.diff(rr))))
+    return {"data" : np.sqrt(np.mean(np.square(np.diff(rr))))}
 
 
 def detect_peaks(ecg_signal, threshold=0.3, qrs_filter=None):
